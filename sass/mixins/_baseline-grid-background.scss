@@ -1,0 +1,14 @@
+/**
+ * Displays an horizontal baseline grid as background image
+ *
+ * @param $baseline - the base line height, defaults to $base-line-height
+ * @param $color - the background color, defaults to $grid-background-baseline-color
+ *
+ * mostly taken from Compass
+ * @see http://compass-style.org/reference/compass/layout/grid_background/#function-build-grid-background
+ */
+@mixin baseline-grid-background($baseline: $base-line-height, $color: $grid-background-baseline-color) {
+  background-image: linear-gradient(to top, $color 5%, rgba($color, 0) 5%);
+  background-size: 100% $baseline;
+  background-position: top left;
+}
