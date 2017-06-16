@@ -52,8 +52,6 @@ a {
 }
 
 article {
-  @include baseline-grid();
-
   max-width: $text-max-width;
   margin: 0 auto vr(2) auto;
 }

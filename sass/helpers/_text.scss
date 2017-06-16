@@ -1,3 +1,7 @@
 .is-brand {
   @include font('brand', 'bold');
 }
+
+.has-baseline-grid {
+  @include baseline-grid();
+}
