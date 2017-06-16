@@ -1,7 +1,7 @@
 @include typi-init;
 
 body {
-  @include font('body');
+  @include font('primary');
 }
 
 p {
@@ -52,6 +52,8 @@ a {
 }
 
 article {
+  @include baseline-grid();
+
   max-width: $text-max-width;
   margin: 0 auto vr(2) auto;
 }
@@ -72,4 +74,9 @@ section + section::before {
   letter-spacing: .6em;
   font-weight: bold;
   text-align: center;
+}
+
+pre,
+code {
+  @include font('monospace');
 }

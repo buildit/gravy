@@ -1,0 +1,27 @@
+// typi configuration map
+// responsible for telling Typi what font-size and line-height
+// values to create at different media queries.
+// also see `settings/_breakpoints.scss`
+$typi: (
+  base: (
+    null: ($base-font-size, $base-line-height),
+    small: (18px),
+    large: (20px)
+  ),
+  // Other font maps here
+  heading: (
+    null: ($font-3-size, vr(2)),
+    small: ($font-2-size, vr(2)),
+    large: ($font-1-size, vr(2.5))
+  ),
+  title: (
+    null: ($font-4-size, vr(1.5)),
+    small: ($font-3-size, vr(1.5)),
+    large: ($font-2-size, vr(2))
+  ),
+  subtitle: (
+    null: ($font-5-size, vr(1.5)),
+    small: ($font-4-size, vr(1.5)),
+    large: ($font-3-size, vr(1.5))
+  )
+);

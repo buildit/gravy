@@ -1,0 +1,40 @@
+// typography
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Rokkitt:300,400|Menlo:400');
+
+// for more information
+// @see https://github.com/zellwk/typi/blob/master/scss/_typi.scss#L24
+$typefaces: (
+  brand: (
+    font-size-ratio: 1,
+    stack: ('Helvetica Neue', Helvetica, Arial, sans-serif),
+    weights: (
+      light: 300,
+      normal: 500,
+      bold: 700
+    ),
+  ),
+  primary: (
+    font-size-ratio: 1,
+    stack: ('Roboto', Arial, sans-serif),
+    weights: (
+      light: 300,
+      regular: 400,
+      bold: 500
+    )
+  ),
+  heading: (
+    font-size-ratio: 1,
+    stack: ('Rokkitt', serif),
+    weights: (
+      regular: 300,
+      bold: 400
+    )
+  ),
+  monospace: (
+    font-size-ratio: 1,
+    stack: ('Menlo', monospace),
+    weights: (
+      regular: 400
+    )
+  )
+);
