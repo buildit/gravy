@@ -53,6 +53,7 @@ each key (small, large) is completely arbitrary, but once set, be sure to refere
 Typography is handled mostly through [typi](https://github.com/zellwk/typi) in conjunction with [modularscale-sass](https://github.com/modularscale/modularscale-sass).
 
 There are two very good articles I would recomment to go through before you start hacking your way around:
+
  - <https://zellwk.com/blog/typi/>
  - <https://zellwk.com/blog/advanced-typi/>
 
@@ -61,6 +62,15 @@ There are two very good articles I would recomment to go through before you star
  - `settings/_modularscale.scss`: where the main modular scale configuration is held, together with some asy to use variables.
  - `settings/_typi.scss`: contains the main list of font-sizes and line heights across the defined [breakpoints](#Breakpoints).
  - `settings/_typefaces.scss`: contans the list of the different typefaces used, these are usually accessed via the `font()` mixin.
+
+ Modularscale requires the base font size and line height to be defined:
+
+    $modularscale: (
+      base: $base-font-size,
+      ratio: 1.2 // Major Thirds
+    );
+
+You can read more about modular scale at <http://www.modularscale.com/>.
 
 ## Development
 
