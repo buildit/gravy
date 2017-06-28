@@ -2,11 +2,11 @@
 $amount: 10;
 
 // brand colours
-$color-black: #1C1F22;
-$color-lime: #BEDB39;
-$color-orange: #FF9800;
-$color-red: #E84925;
-$color-blue: #4682B4;
+$color-black: #1c1f22;
+$color-lime: #bedb39;
+$color-orange: #ff9800;
+$color-red: #e84925;
+$color-blue: #4682b4;
 
 // shades of brand colours
 $color-lime-dark: darken($color-lime, $amount);
@@ -19,15 +19,15 @@ $color-blue-dark: darken($color-blue, $amount);
 $color-blue-light: lighten($color-blue, $amount);
 
 // shades of grey
-$color-white: #FFFFFF;
-$color-grey-light: #EDEDED;
+$color-white: #fff;
+$color-grey-light: #ededed;
 $color-grey-mid: #808080;
-$color-grey-dark: #333333;
+$color-grey-dark: #333;
 
 // other colours
-$color-error: #D9534F;
-$color-notice: #00BFFF;
-$color-success: #5CB85C;
+$color-error: #d9534f;
+$color-notice: #00bfff;
+$color-success: #5cb85c;
 
 // shades of other colours
 $color-error-dark: darken($color-error, $amount);
@@ -38,4 +38,4 @@ $color-success-dark: darken($color-success, $amount);
 $color-success-light: lighten($color-success, $amount);
 
 // baseline background color
-$grid-background-baseline-color: rgba(232, 73, 37, .5);
+$grid-background-baseline-color: rgba(232, 73, 37, 0.5);

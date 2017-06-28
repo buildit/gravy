@@ -13,25 +13,22 @@ h6,
 h1,
 .heading {
   @include typi('heading');
-
-  margin-top: vr(1);
   margin-bottom: vr(2);
+  margin-top: vr(1);
 }
 
 h2,
 .title {
   @include typi('title');
-
-  margin-top: vr(1);
   margin-bottom: vr(1);
+  margin-top: vr(1);
 }
 
 h3,
 .subtitle {
   @include typi('subtitle');
-
-  margin-top: vr(1);
   margin-bottom: vr(2);
+  margin-top: vr(1);
 }
 
 h4 {
@@ -53,6 +50,6 @@ header > h3,
 header > .heading,
 header > .title,
 header > .subtitle {
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }

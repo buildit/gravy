@@ -5,33 +5,32 @@ body {
 }
 
 p {
-  margin-top: vr(1);
   margin-bottom: vr(1);
+  margin-top: vr(1);
   max-width: $text-max-width;
 }
 
 blockquote {
   @include font('heading');
-
   font-size: $font-6-size;
   font-style: italic;
 
   &::before {
-    content: "“";
+    content: '“';
   }
 
   &::after {
-    content: "”";
+    content: '”';
   }
 }
 
 ul,
 ol {
-  margin-top: vr(1);
   margin-bottom: vr(2);
+  margin-top: vr(1);
 
   > li {
-    margin-bottom: vr(.5);
+    margin-bottom: vr(0.5);
   }
 }
 
@@ -52,8 +51,8 @@ a {
 }
 
 article {
-  max-width: $text-max-width;
   margin: 0 auto vr(2) auto;
+  max-width: $text-max-width;
 }
 
 header {
@@ -61,16 +60,16 @@ header {
 }
 
 article > header {
-  margin-top: 0;
   margin-bottom: vr(2);
+  margin-top: 0;
 }
 
 // display a separator on consecutive sections
 section + section::before {
-  content: "...";
+  content: '...';
   display: block;
-  letter-spacing: .6em;
   font-weight: bold;
+  letter-spacing: 0.6em;
   text-align: center;
 }
 

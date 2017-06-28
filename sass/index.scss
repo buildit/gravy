@@ -7,35 +7,35 @@
 /*
  * Third Party Tools
  */
-@import "modularscale";
-@import "typi";
+@import 'modularscale';
+@import 'typi';
 
 /*
  * Mixins and functions
  */
-@import "mixins/breakpoint";
-@import "mixins/font";
+@import 'mixins/breakpoint';
+@import 'mixins/font';
 
 /*
  * Settings: Global variables, config switches
  */
-@import "settings/variables";
-@import "settings/breakpoints";
-@import "settings/modularscale";
-@import "settings/typi";
-@import "settings/typefaces";
-@import "settings/colours";
+@import 'settings/variables';
+@import 'settings/breakpoints';
+@import 'settings/modularscale';
+@import 'settings/typi';
+@import 'settings/typefaces';
+@import 'settings/colours';
 
 /*
  * Generic: Ground-zero styles (normalize, reset, box-sizing)
  */
-@import "normalize";
+@import 'normalize';
 
 /*
  * Base: Unclassed HTML elements (type selectors)
  */
-@import "base/text";
-@import "base/headings";
+@import 'base/text';
+@import 'base/headings';
 
 /*
  * Objects: Cosmetic-free design patterns
@@ -48,4 +48,4 @@
 /*
  * Trumps: Helpers and overrides
  */
-@import "helpers/text";
+@import 'helpers/text';
