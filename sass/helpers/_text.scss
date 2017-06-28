@@ -1,7 +1,14 @@
+// give the ability to use the font family alone
 .is-brand {
   @include font('brand', 'bold');
 }
 
+// give the ability to use the font family alone
+.is-heading {
+  @include font('heading', 'bold');
+}
+
+// enable display of baseline grid
 .has-baseline-grid {
   @include baseline-grid;
 }
