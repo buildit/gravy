@@ -20,7 +20,7 @@
          "ignore": ["inside-function"]
        }
     ],
-    "rule-nested-empty-line-before": [
+    "rule-empty-line-before": [
       "always",
       {
         "except": ["first-nested"],

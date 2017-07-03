@@ -39,5 +39,8 @@
     "stylelint-order": "^0.5.0",
     "stylelint-scss": "^1.4.4",
     "stylelint-selector-bem-pattern": "^1.1.0"
+  },
+  "scripts": {
+    "test": "stylelint sass/**/*.scss"
   }
 }
