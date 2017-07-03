@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/buildit/gravy/tree/master.svg?style=svg)](https://circleci.com/gh/buildit/gravy/tree/master)
+
 # Gravy is a SCSS foundation library
 
 **Q:** What is a _foundation library_?
