@@ -32,11 +32,11 @@ These are not currently used anywhere else but in this file.
 The file is split into three main sections:
 
 - Brand Colours
-  - `$color-black`
-  - `$color-lime`
-  - `$color-orange`
-  - `$color-lime`
-  - `$color-blue`
+  - `$color-brand-black`
+  - `$color-brand-lime`
+  - `$color-brand-orange`
+  - `$color-brand-lime`
+  - `$color-brand-blue`
 - Shades of Brand Colours, with `-light` and `-dark` variations
 - Shades of Grey:
   - `$color-white`
@@ -49,7 +49,7 @@ The file is split into three main sections:
   - `$color-success`
 - Shades of Other Colours, with `-light` and `-dark` variations.
 
-The `-light` and `-dark` variations highlighted above are calculated dynamically using the variable `$amount` defaulting to `10`.
+The `-light` and `-dark` variations highlighted above are calculated dynamically using the variable `$color-shade-amount` defaulting to `10`.
 
 ## Typography and Vertical Rhythm
 

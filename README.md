@@ -48,9 +48,9 @@ The configuration has been split in different section to make it more easy to fo
 
 You can contribute to the development of this library in many ways:
 
-- filing bug reports
-- submitting PRs
-- chatting with our core developers if none the above works _(we'll try to answer all of your love letters!)_
+- submitting [bug reports](https://github.com/buildit/gravy/issues),
+- opening [PRs](https://github.com/buildit/gravy/pulls),
+- getting in touch with our core developers if none the above works _(we'll try to answer all of your love letters!)_.
 
-**NOTE** Be sure to enable [stylelint](https://stylelint.io/) in your preferred IDE/Editor, any PR submitted that doesn't lint correctly will be rejected.
+**NOTE** Be sure to enable [stylelint](https://stylelint.io/) in your preferred IDE/Editor, or run `npm test` before pushing and opening a PR: any PR submitted that doesn't lint correctly will be rejected.
 
