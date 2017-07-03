@@ -1,11 +1,11 @@
 {
   "name": "@buildit/gravy",
   "version": "1.0.2",
-  "description": "SCSS foundation library.",
+  "description": "SASS foundation library.",
   "main": "README.md",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:digitalrigbitbucketteam/gravy.git"
+    "url": "git@github.com:buildit/gravy.git"
   },
   "keywords": [
     "eyeglass-module",
@@ -22,9 +22,9 @@
   "author": "Matteo Pescarin <matteo.pescarin@wipro.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://bitbucket.org/digitalrigbitbucketteam/gravy/issues"
+    "url": "https://github.com/buildit/gravy/issues"
   },
-  "homepage": "https://bitbucket.org/digitalrigbitbucketteam/gravy/overview",
+  "homepage": "https://github.com/buildit/gravy",
   "contributors": [
     "Matteo Pescarin <matteo.pescarin@wipro.com>"
   ],
