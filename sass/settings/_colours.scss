@@ -9,14 +9,14 @@ $color-brand-red: #e84925;
 $color-brand-blue: #4682b4;
 
 // shades of brand colours
-$color-brand-lime-dark: darken($color-lime, $amount);
-$color-brand-lime-light: lighten($color-lime, $amount);
-$color-brand-orange-dark: darken($color-orange, $amount);
-$color-brand-orange-light: lighten($color-orange, $amount);
-$color-brand-red-dark: darken($color-red, $amount);
-$color-brand-red-light: lighten($color-red, $amount);
-$color-brand-blue-dark: darken($color-blue, $amount);
-$color-brand-blue-light: lighten($color-blue, $amount);
+$color-brand-lime-dark: darken($color-brand-lime, $color-shade-amount);
+$color-brand-lime-light: lighten($color-brand-lime, $color-shade-amount);
+$color-brand-orange-dark: darken($color-brand-orange, $color-shade-amount);
+$color-brand-orange-light: lighten($color-brand-orange, $color-shade-amount);
+$color-brand-red-dark: darken($color-brand-red, $color-shade-amount);
+$color-brand-red-light: lighten($color-brand-red, $color-shade-amount);
+$color-brand-blue-dark: darken($color-brand-blue, $color-shade-amount);
+$color-brand-blue-light: lighten($color-brand-blue, $color-shade-amount);
 
 // shades of grey
 $color-white: #fff;
@@ -30,12 +30,12 @@ $color-notice: #00bfff;
 $color-success: #5cb85c;
 
 // shades of other colours
-$color-error-dark: darken($color-error, $amount);
-$color-error-light: lighten($color-error, $amount);
-$color-notice-dark: darken($color-notice, $amount);
-$color-notice-light: lighten($color-notice, $amount);
-$color-success-dark: darken($color-success, $amount);
-$color-success-light: lighten($color-success, $amount);
+$color-error-dark: darken($color-error, $color-shade-amount);
+$color-error-light: lighten($color-error, $color-shade-amount);
+$color-notice-dark: darken($color-notice, $color-shade-amount);
+$color-notice-light: lighten($color-notice, $color-shade-amount);
+$color-success-dark: darken($color-success, $color-shade-amount);
+$color-success-light: lighten($color-success, $color-shade-amount);
 
 // baseline background color
 $grid-background-baseline-color: rgba(232, 73, 37, 0.5);
