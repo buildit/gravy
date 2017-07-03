@@ -1,22 +1,22 @@
 // used for colour adjustments
-$amount: 10;
+$color-shade-amount: 10;
 
 // brand colours
-$color-black: #1c1f22;
-$color-lime: #bedb39;
-$color-orange: #ff9800;
-$color-red: #e84925;
-$color-blue: #4682b4;
+$color-brand-black: #1c1f22;
+$color-brand-lime: #bedb39;
+$color-brand-orange: #ff9800;
+$color-brand-red: #e84925;
+$color-brand-blue: #4682b4;
 
 // shades of brand colours
-$color-lime-dark: darken($color-lime, $amount);
-$color-lime-light: lighten($color-lime, $amount);
-$color-orange-dark: darken($color-orange, $amount);
-$color-orange-light: lighten($color-orange, $amount);
-$color-red-dark: darken($color-red, $amount);
-$color-red-light: lighten($color-red, $amount);
-$color-blue-dark: darken($color-blue, $amount);
-$color-blue-light: lighten($color-blue, $amount);
+$color-brand-lime-dark: darken($color-lime, $amount);
+$color-brand-lime-light: lighten($color-lime, $amount);
+$color-brand-orange-dark: darken($color-orange, $amount);
+$color-brand-orange-light: lighten($color-orange, $amount);
+$color-brand-red-dark: darken($color-red, $amount);
+$color-brand-red-light: lighten($color-red, $amount);
+$color-brand-blue-dark: darken($color-blue, $amount);
+$color-brand-blue-light: lighten($color-blue, $amount);
 
 // shades of grey
 $color-white: #fff;
