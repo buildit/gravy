@@ -39,14 +39,14 @@ small {
 }
 
 a {
-  color: $color-blue;
+  color: $color-brand-blue;
 
   &:hover {
-    color: $color-blue-dark;
+    color: $color-brand-blue-dark;
   }
 
   &:visited {
-    color: $color-blue-light;
+    color: $color-brand-blue-light;
   }
 }
 
