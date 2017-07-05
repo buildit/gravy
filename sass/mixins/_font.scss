@@ -1,7 +1,7 @@
 /**
  * Fills in the right font family and font weight
  *
- * @param {string} $type - either one of `brand`, `heading`, `primary` or `monospace`.
+ * @param {string} $type - either one of `heading`, `primary`, `secondary`  or `monospace`.
  * @param {string} $normal - the font-weight desired, can be `light`, `regular` or `bold`, defaults to `regular`
  */
 @mixin font($type, $weight: 'regular') {

@@ -36,17 +36,25 @@ There are two very good articles I would recomment to go through before you star
  - <https://zellwk.com/blog/typi/>
  - <https://zellwk.com/blog/advanced-typi/>
 
- The other font maps currently defined are:
+The other font maps currently defined are:
 
- - `heading` for all high level headings, as `<h1>`s,
- - `title` for all titles, as `<h2>`s,
- - `subtitle` for all subtitles, as `<h3>`s.
+ - `alpha`
+ - `beta`
+ - `gamma`
+ - `delta`
+ - `eta`
+ - `big-text`
+ - `small-text`
 
- If you're overriding the map, be sure to extend and define correctly all the entries at the various breakpoints.
+With `alpha` being the biggest font you can get, and `small-text` being the smallest compared to the default.
 
- The Typefaces map allows you to define all fonts and their weights.
+Usually, when defining a new block of text, you would use either `big-text` or `small-text`, while any other should be reserved for headings, titles and subtitles, see [Headings](headings.md) for more information.
 
- These can be accessed using the mixin `font($type, $weight)`, like:
+If you're overriding the map, be sure to extend and define correctly all the entries at the various breakpoints.
+
+The Typefaces map allows you to define all fonts and their weights.
+
+These can be accessed using the mixin `font($type, $weight)`, like:
 
     .my-block {
       @include font('heading', 'bold');
@@ -55,8 +63,8 @@ There are two very good articles I would recomment to go through before you star
 The structure of the map is the following:
 
     $typefaces: (
-      brand: (
-        stack: ('Helvetica Neue', Helvetica, Arial, sans-serif),
+      heading: (
+        stack: ('Cabin', Arial, sans-serif),
         weights: (
           light: 300,
           normal: 500,
@@ -68,7 +76,7 @@ The structure of the map is the following:
 
 The typefaces currently defined are:
 
- - `brand`, for all brand-related visualisations,
+ - `heading`, for all headings,
  - `primary`, the basic text font face,
- - `heading`, for the common heading font face,
+ - `secondary`, as a secondary complimentary font face, for pull out quotes and highlighted text,
  - `monospace`, this is quite easy to guess.

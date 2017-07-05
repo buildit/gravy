@@ -4,52 +4,63 @@ h3,
 h4,
 h5,
 h6,
-.heading,
+.title-main,
 .title,
-.subtitle {
-  @include font('heading', 'bold');
+.title-small
+.subtitle-main,
+.subtitle,
+.subtitle-small {
+  @include font('heading');
 }
 
 h1,
-.heading {
-  @include typi('heading');
+.title-main {
+  @include typi('alpha');
   margin-bottom: vr(2);
   margin-top: vr(1);
 }
 
 h2,
-.title {
-  @include typi('title');
+.subtitle-main {
+  @include typi('beta');
   margin-bottom: vr(1);
   margin-top: vr(1);
 }
 
 h3,
-.subtitle {
-  @include typi('subtitle');
+.title {
+  @include typi('gamma');
   margin-bottom: vr(2);
   margin-top: vr(1);
 }
 
-h4 {
-  font-size: $font-4-size;
+h4,
+.subtitle {
+  @include typi('delta');
 }
 
-h5 {
-  font-size: $font-5-size;
+h5,
+.title-small {
+  @include typi('eta');
+  font-weight: bold;
 }
 
-h6 {
-  font-size: $font-6-size;
+h6,
+.subtitle-small {
+  @include typi('text-big');
+  font-style: italic;
 }
 
 // void margins if headings are inside a header tag
 header > h1,
 header > h2,
 header > h3,
-header > .heading,
+header > .title-main,
 header > .title,
-header > .subtitle {
+header > .title-small,
+header > .subtitle-main,
+header > .subtitle,
+header > .subtitle-small {
   margin-bottom: 0;
   margin-top: 0;
 }

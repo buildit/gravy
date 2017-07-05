@@ -4,24 +4,44 @@
 // also see `settings/_breakpoints.scss`
 $typi: (
   base: (
-    null: ($base-font-size, $base-line-height),
-    small: (18px),
-    large: (20px)
+    null: ($font-9-size, $base-line-height),
+    small: ($font-8-size),
+    large: ($font-7-size)
   ),
   // Other font maps here
-  heading: (
-    null: ($font-3-size, vr(1.5)),
-    small: ($font-2-size, vr(2)),
-    large: ($font-1-size, vr(2.5))
+  alpha: (
+    null: ($font-3-size, vr(2.3)),
+    small: ($font-2-size, vr(2.7)),
+    large: ($font-1-size, vr(3))
   ),
-  title: (
-    null: ($font-4-size, vr(1.5)),
-    small: ($font-3-size, vr(1.5)),
-    large: ($font-2-size, vr(2))
+  beta: (
+    null: ($font-4-size, vr(2)),
+    small: ($font-3-size, vr(2.3)),
+    large: ($font-2-size, vr(2.5))
   ),
-  subtitle: (
-    null: ($font-5-size, vr(1.5)),
-    small: ($font-4-size, vr(1.5)),
-    large: ($font-3-size, vr(1.5))
+  gamma: (
+    null: ($font-5-size, vr(1.7)),
+    small: ($font-4-size, vr(2)),
+    large: ($font-3-size, vr(2.3))
+  ),
+  delta: (
+    null: ($font-6-size, vr(1.5)),
+    small: ($font-5-size, vr(1.7)),
+    large: ($font-4-size, vr(2))
+  ),
+  eta: (
+    null: ($font-7-size, vr(1.3)),
+    small: ($font-6-size, vr(1.5)),
+    large: ($font-5-size, vr(1.7))
+  ),
+  text-big: (
+    null: ($font-8-size, vr(1.2)),
+    small: ($font-7-size, vr(1.4)),
+    large: ($font-6-size, vr(1.5))
+  ),
+  text-small: (
+    null: ($font-10-size, vr(0.8)),
+    small: ($font-10-size, vr(0.8)),
+    large: ($font-10-size, vr(0.8))
   )
 );

@@ -41,6 +41,7 @@ The configuration has been split in different section to make it more easy to fo
 
 - **[Variables](docs/variables.md)**
 - **[Typography and Vertical Rhythm](docs/typography-and-vertical-rhythm.md)**
+- **[Headings](docs/headings.md)**
 - **[Mixins and Functions](docs/mixins-and-functions.md)**
 - **[Helpers](docs/helpers.md)**
 
