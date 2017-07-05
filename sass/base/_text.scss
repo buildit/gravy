@@ -11,16 +11,15 @@ p {
 }
 
 blockquote {
-  @include font('heading');
-  font-size: $font-6-size;
-  font-style: italic;
+  @include font('secondary');
+  @include typi('text-big');
+  position: relative;
 
   &::before {
     content: '“';
-  }
-
-  &::after {
-    content: '”';
+    font-size: $font-1-size;
+    left: -0.5em;
+    position: absolute;
   }
 }
 
@@ -28,14 +27,39 @@ ul,
 ol {
   margin-bottom: vr(2);
   margin-top: vr(1);
+  padding-left: 1em;
 
   > li {
     margin-bottom: vr(0.5);
   }
+
+  ul,
+  ol {
+    margin-bottom: vr(1);
+  }
+}
+
+ul {
+  list-style-type: circle;
+
+  > ul > li {
+    list-style-type: disc;
+  }
+}
+
+big {
+  @include typi('text-big');
+}
+
+figcaption {
+  @include typi('text-small');
+  color: $color-grey-mid;
+  font-style: italic;
+  text-align: center;
 }
 
 small {
-  font-size: $font-9-size;
+  @include typi('text-small');
 }
 
 a {
@@ -48,6 +72,16 @@ a {
   &:visited {
     color: $color-brand-blue-light;
   }
+}
+
+cite {
+  font-style: normal;
+  font-weight: bold;
+}
+
+q {
+  @include font('secondary');
+  font-style: italic;
 }
 
 article {

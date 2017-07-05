@@ -1,11 +1,16 @@
 // give the ability to use the font family alone
-.is-brand {
-  @include font('brand', 'bold');
+.is-heading {
+  @include font('heading', 'regular');
 }
 
-// give the ability to use the font family alone
-.is-heading {
-  @include font('heading', 'bold');
+// give the ability to use the secondary font family alone
+.is-secondary {
+  @include font('secondary', 'regular');
+}
+
+// changes the colour of text to `$color-grey-mid`
+.is-muted {
+  color: $color-grey-mid;
 }
 
 // enable display of baseline grid

@@ -1,18 +1,9 @@
 // typography
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Rokkitt:300,400|Menlo:400');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Slab:400,700|Roboto:400,400i,500,500i|Menlo');
 
 // for more information
 // @see https://github.com/zellwk/typi/blob/master/scss/_typi.scss#L24
 $typefaces: (
-  brand: (
-    font-size-ratio: 1,
-    stack: ('Helvetica Neue', Helvetica, Arial, sans-serif),
-    weights: (
-      light: 300,
-      regular: 500,
-      bold: 700
-    ),
-  ),
   primary: (
     font-size-ratio: 1,
     stack: ('Roboto', Arial, sans-serif),
@@ -22,13 +13,20 @@ $typefaces: (
       bold: 500
     )
   ),
+  secondary: (
+    font-size-ratio: 1,
+    stack: ('Roboto Slab', serif),
+    weights: (
+      regular: 400,
+      bold: 700
+    )
+  ),
   heading: (
     font-size-ratio: 1,
-    stack: ('Rokkitt', serif),
+    stack: ('Cabin', Arial, sans-serif),
     weights: (
-      regular: 300,
-      bold: 400
-    )
+      regular: 500
+    ),
   ),
   monospace: (
     font-size-ratio: 1,
