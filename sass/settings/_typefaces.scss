@@ -1,38 +1,53 @@
 // typography
-@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Slab:400,700|Roboto:400,400i,500,500i|Menlo');
+// add something like the following to have things working as expected
+// @import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Mono|Roboto+Slab|Roboto:400,500');
 
-// for more information
+// Primary font face
+$primary-font-stack: ('Roboto', sans-serif);
+$primary-font-weights: (
+  regular: 400,
+  bold: 500
+);
+
+// Secondary font face
+$secondary-font-stack: ('Roboto Slab', serif);
+$secondary-font-weights: (
+  regular: 400
+);
+
+// Heading font face
+$heading-font-stack: ('Cabin', sans-serif);
+$heading-font-weights: (
+  regular: 400
+);
+
+// Monospace font face
+$monospace-font-stack: ('Roboto Mono', monospace);
+$monospace-font-weights: (
+  regular: 400
+);
+
+// This is an interal variable used by typi, for more information
 // @see https://github.com/zellwk/typi/blob/master/scss/_typi.scss#L24
 $typefaces: (
   primary: (
     font-size-ratio: 1,
-    stack: ('Roboto', Arial, sans-serif),
-    weights: (
-      light: 300,
-      regular: 400,
-      bold: 500
-    )
+    stack: $primary-font-stack,
+    weights: $primary-font-weights
   ),
   secondary: (
     font-size-ratio: 1,
-    stack: ('Roboto Slab', serif),
-    weights: (
-      regular: 400,
-      bold: 700
-    )
+    stack: $secondary-font-stack,
+    weights: $secondary-font-weights
   ),
   heading: (
     font-size-ratio: 1,
-    stack: ('Cabin', Arial, sans-serif),
-    weights: (
-      regular: 500
-    ),
+    stack: $heading-font-stack,
+    weights: $heading-font-weights
   ),
   monospace: (
     font-size-ratio: 1,
-    stack: ('Menlo', monospace),
-    weights: (
-      regular: 400
-    )
+    stack: $monospace-font-stack,
+    weights: $monospace-font-weights
   )
 );

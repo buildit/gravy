@@ -1,12 +1,12 @@
 // modular scale
+$modularscale-ratio: 1.2; // Major Thirds
 
 $modularscale: (
   base: $base-font-size,
-  ratio: 1.2 // Major Thirds
+  ratio: $modularscale-ratio
 );
 
-// font sizes, 1 being the largest. see typi config below
-
+// font sizes, 1 being the largest. see typi config too
 $font-1-size: ms(7);
 $font-2-size: ms(6);
 $font-3-size: ms(5);
