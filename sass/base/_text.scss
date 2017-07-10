@@ -10,6 +10,11 @@ p {
   max-width: $text-max-width;
 }
 
+*:focus {
+  outline-color: $color-brand-blue;
+  outline-style: auto;
+}
+
 blockquote {
   @include font('secondary');
   @include typi('text-big');
@@ -63,13 +68,17 @@ small {
 }
 
 a {
+  border-bottom: 1px solid $color-grey-light;
   color: $color-brand-blue;
+  text-decoration: none;
 
   &:hover {
+    border-bottom-color: $color-brand-blue;
     color: $color-brand-blue-dark;
   }
 
   &:visited {
+    border-bottom-color: $color-brand-blue-light;
     color: $color-brand-blue-light;
   }
 }
