@@ -4,6 +4,11 @@ body {
   @include font('primary');
 }
 
+*:focus {
+  outline-color: $color-brand-blue;
+  outline-style: auto;
+}
+
 p {
   margin-bottom: vr(1);
   margin-top: vr(1);
@@ -63,13 +68,17 @@ small {
 }
 
 a {
+  border-bottom: 1px solid $color-grey-light;
   color: $color-brand-blue;
+  text-decoration: none;
 
   &:hover {
+    border-bottom: 1px solid $color-brand-blue-dark;
     color: $color-brand-blue-dark;
   }
 
   &:visited {
+    border-bottom: 1px solid $color-brand-blue-light;
     color: $color-brand-blue-light;
   }
 }
