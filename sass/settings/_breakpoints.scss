@@ -1,7 +1,9 @@
 // The following map holds the list of breakpoints
 // is also used by typi
 // @see `settings/_typi.scss`
-$breakpoints: (
+$gravy-breakpoints: (
   small: 600px,
   large: 1200px
-);
+) !default;
+
+$breakpoints: $gravy-breakpoints;

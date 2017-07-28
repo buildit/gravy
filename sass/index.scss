@@ -24,7 +24,6 @@
 @import 'settings/modularscale';
 @import 'settings/typi';
 @import 'settings/typefaces';
-@import 'settings/colours';
 
 /*
  * Generic: Ground-zero styles (normalize, reset, box-sizing)
@@ -36,7 +35,6 @@
  */
 @import 'base/text';
 @import 'base/headings';
-@import 'base/forms';
 
 /*
  * Objects: Cosmetic-free design patterns

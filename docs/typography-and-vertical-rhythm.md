@@ -91,7 +91,7 @@ There are two very good articles I would recomment to go through before you star
 
 Typi map has the following structure:
 
-    $typi: (
+    $gravy-typi: (
       base: (
         null: ($font-9-size, $base-line-height),
         small: ($font-8-size),

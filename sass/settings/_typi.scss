@@ -2,7 +2,7 @@
 // responsible for telling Typi what font-size and line-height
 // values to create at different media queries.
 // also see `settings/_breakpoints.scss`
-$typi: (
+$gravy-typi: (
   base: (
     null: ($font-9-size, $base-line-height),
     small: ($font-8-size),
@@ -44,4 +44,6 @@ $typi: (
     small: ($font-10-size, vr(0.8)),
     large: ($font-10-size, vr(0.8))
   )
-);
+) !default;
+
+$typi: $gravy-typi;
