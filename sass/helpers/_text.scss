@@ -8,11 +8,6 @@
   @include font('secondary', 'regular');
 }
 
-// changes the colour of text to `$color-grey-mid`
-.is-muted {
-  color: $color-grey-mid;
-}
-
 // enable display of baseline grid
 .has-baseline-grid {
   @include baseline-grid;

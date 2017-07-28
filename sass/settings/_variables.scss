@@ -1,5 +1,5 @@
-$base-font-size: 16px;
-$base-line-height: 1.4;
+$base-font-size: 16px !default;
+$base-line-height: 1.4 !default;
 
 // width for improved legibility of text
-$text-max-width: 40em;
+$text-max-width: 40em !default;

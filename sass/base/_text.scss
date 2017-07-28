@@ -5,7 +5,6 @@ body {
 }
 
 *:focus {
-  outline-color: $color-brand-blue;
   outline-style: auto;
 }
 
@@ -58,29 +57,12 @@ big {
 
 figcaption {
   @include typi('text-small');
-  color: $color-grey-mid;
   font-style: italic;
   text-align: center;
 }
 
 small {
   @include typi('text-small');
-}
-
-a {
-  border-bottom: 1px solid $color-grey-light;
-  color: $color-brand-blue;
-  text-decoration: none;
-
-  &:hover {
-    border-bottom: 1px solid $color-brand-blue-dark;
-    color: $color-brand-blue-dark;
-  }
-
-  &:visited {
-    border-bottom: 1px solid $color-brand-blue-light;
-    color: $color-brand-blue-light;
-  }
 }
 
 cite {

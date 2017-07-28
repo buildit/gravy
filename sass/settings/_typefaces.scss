@@ -3,29 +3,29 @@
 // @import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Mono|Roboto+Slab|Roboto:400,500');
 
 // Primary font face
-$primary-font-stack: ('Roboto', sans-serif);
+$primary-font-stack: ('Roboto', sans-serif) !default;
 $primary-font-weights: (
   regular: 400,
   bold: 500
-);
+) !default;
 
 // Secondary font face
-$secondary-font-stack: ('Roboto Slab', serif);
+$secondary-font-stack: ('Roboto Slab', serif) !default;
 $secondary-font-weights: (
   regular: 400
-);
+) !default;
 
 // Heading font face
-$heading-font-stack: ('Cabin', sans-serif);
+$heading-font-stack: ('Cabin', sans-serif) !default;
 $heading-font-weights: (
   regular: 400
-);
+) !default;
 
 // Monospace font face
-$monospace-font-stack: ('Roboto Mono', monospace);
+$monospace-font-stack: ('Roboto Mono', monospace) !default;
 $monospace-font-weights: (
   regular: 400
-);
+) !default;
 
 // This is an interal variable used by typi, for more information
 // @see https://github.com/zellwk/typi/blob/master/scss/_typi.scss#L24

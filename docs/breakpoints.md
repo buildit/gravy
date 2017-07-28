@@ -2,9 +2,9 @@
 
 The breakpoints definition assumes you're working using _mobile-frist_ approach.
 
-The format of the map `$breakpoints` is the following:
+The format of the map `$gravy-breakpoints` is the following:
 
-    $breakpoints: (
+    $gravy-breakpoints: (
       small: 600px,
       large: 1200px
     );
