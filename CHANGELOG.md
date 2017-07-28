@@ -18,3 +18,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - removed color attributes from the base styles
 - removed colours documentation
 - removed `.is-muted` class
+- removed `max-width` from `<article>` style
