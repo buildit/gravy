@@ -77,16 +77,15 @@ q {
 
 article {
   margin: 0 auto vr(2) auto;
-  max-width: $text-max-width;
+
+  > header {
+    margin-bottom: vr(2);
+    margin-top: 0;
+  }
 }
 
 header {
   margin: vr(1) 0 vr(1) 0;
-}
-
-article > header {
-  margin-bottom: vr(2);
-  margin-top: 0;
 }
 
 // display a separator on consecutive sections
