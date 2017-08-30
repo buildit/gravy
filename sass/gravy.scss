@@ -1,0 +1,51 @@
+/*
+ * This is the main file for the whole project.
+ * It should be used only if you don't plan to use *eyeglass*.
+ * It follows ITCSS-like structure, so be sure to know what you're doing
+ * No style definitions should be made here, only `@import`
+ */
+
+/*
+ * Third Party Tools
+ */
+@import 'node_modules/modularscale-sass/stylesheets/modularscale';
+@import 'node_modules/typi/scss/typi';
+
+/*
+ * Mixins and functions
+ */
+@import 'functions/breakpoint';
+@import 'mixins/font';
+
+/*
+ * Settings: Global variables, config switches
+ */
+@import 'settings/variables';
+@import 'settings/breakpoints';
+@import 'settings/modularscale';
+@import 'settings/typi';
+@import 'settings/typefaces';
+
+/*
+ * Generic: Ground-zero styles (normalize, reset, box-sizing)
+ */
+@import 'node_modules/normalize-scss/sass/normalize';
+
+/*
+ * Base: Unclassed HTML elements (type selectors)
+ */
+@import 'base/text';
+@import 'base/headings';
+
+/*
+ * Objects: Cosmetic-free design patterns
+ */
+
+/*
+ * Components: Designed components, chunks of UI
+ */
+
+/*
+ * Trumps: Helpers and overrides
+ */
+@import 'helpers/text';
