@@ -33,6 +33,10 @@ If you have [Eyeglass](http://eyeglass.rocks) installed, you can simply include 
 
     @include "gravy";
 
+Otherwise, if you don't want to customise anything, just include the whole path:
+
+    @include "node_modules/gravy/sass/gravy";
+
 Once that's done, you can start configuring it by overriding the needed variables and maps.
 
 ## Configuration
