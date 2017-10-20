@@ -29,16 +29,15 @@
     "Matteo Pescarin <matteo.pescarin@wipro.com>"
   ],
   "dependencies": {
-    "modularscale-sass": "^3.0.2",
+    "modularscale-sass": "^3.0.3",
     "normalize-scss": "^7.0.0",
-    "typi": "^3.1.0"
+    "typi": "^3.1.1"
   },
   "devDependencies": {
     "stylelint": "^7.11.0",
     "stylelint-config-sass-guidelines": "^2.2.0",
     "stylelint-order": "^0.5.0",
-    "stylelint-scss": "^1.4.4",
-    "stylelint-selector-bem-pattern": "^1.1.0"
+    "stylelint-scss": "^1.5.2"
   },
   "scripts": {
     "test": "stylelint sass/**/*.scss"
