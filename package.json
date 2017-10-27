@@ -34,12 +34,15 @@
     "typi": "^3.1.1"
   },
   "devDependencies": {
+    "node-sass": "^4.5.3",
     "stylelint": "^7.11.0",
     "stylelint-config-sass-guidelines": "^2.2.0",
     "stylelint-order": "^0.5.0",
     "stylelint-scss": "^1.5.2"
   },
   "scripts": {
-    "test": "stylelint sass/**/*.scss"
+    "test": "npm run stylelint && npm run sass",
+    "sass": "node-sass sass/gravy.scss dist/css/gravy.css",
+    "stylelint": "stylelint sass/**/*.scss"
   }
 }

@@ -10,6 +10,8 @@
  */
 @import 'node_modules/modularscale-sass/stylesheets/modularscale';
 @import 'node_modules/typi/scss/typi';
+// @FIXME see https://github.com/zellwk/typi/issues/42
+@import 'node_modules/typi/scss/public/typefaces/typefaces';
 
 /*
  * Mixins and functions
