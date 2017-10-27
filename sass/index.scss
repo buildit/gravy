@@ -9,6 +9,8 @@
  */
 @import 'modularscale';
 @import 'typi';
+// @FIXME see typi issue #11
+@import 'typi/public/typefaces/typefaces';
 
 /*
  * Mixins and functions
