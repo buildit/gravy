@@ -1,10 +1,12 @@
 // modular scale
 $modularscale-ratio: 1.2 !default; // Major Thirds
 
-$modularscale: (
+$gravy-modularscale: (
   base: $base-font-size,
   ratio: $modularscale-ratio
-);
+) !default;
+
+$modularscale: $gravy-modularscale;
 
 // font sizes, 1 being the largest. see typi config too
 $font-1-size: ms(7) !default;
