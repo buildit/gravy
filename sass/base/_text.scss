@@ -8,12 +8,6 @@ body {
   outline-style: auto;
 }
 
-p {
-  margin-bottom: vr(1);
-  margin-top: vr(1);
-  max-width: $text-max-width;
-}
-
 blockquote {
   @include font('secondary');
   @include typi('text-big');
@@ -24,22 +18,6 @@ blockquote {
     font-size: $font-1-size;
     left: -0.5em;
     position: absolute;
-  }
-}
-
-ul,
-ol {
-  margin-bottom: vr(2);
-  margin-top: vr(1);
-  padding-left: 1em;
-
-  > li {
-    margin-bottom: vr(0.5);
-  }
-
-  ul,
-  ol {
-    margin-bottom: vr(1);
   }
 }
 
@@ -73,28 +51,6 @@ cite {
 q {
   @include font('secondary');
   font-style: italic;
-}
-
-article {
-  margin: 0 auto vr(2) auto;
-
-  > header {
-    margin-bottom: vr(2);
-    margin-top: 0;
-  }
-}
-
-header {
-  margin: vr(1) 0 vr(1) 0;
-}
-
-// display a separator on consecutive sections
-section + section::before {
-  content: '...';
-  display: block;
-  font-weight: bold;
-  letter-spacing: 0.6em;
-  text-align: center;
 }
 
 pre,
