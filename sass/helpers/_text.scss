@@ -7,8 +7,3 @@
 .is-secondary {
   @include font('secondary', 'regular');
 }
-
-// enable display of baseline grid
-.has-baseline-grid {
-  @include baseline-grid;
-}

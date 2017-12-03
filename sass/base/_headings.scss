@@ -16,22 +16,16 @@ h6,
 h1,
 .title-main {
   @include typi('alpha');
-  margin-bottom: vr(2);
-  margin-top: vr(1);
 }
 
 h2,
 .subtitle-main {
   @include typi('beta');
-  margin-bottom: vr(1);
-  margin-top: vr(1);
 }
 
 h3,
 .title {
   @include typi('gamma');
-  margin-bottom: vr(2);
-  margin-top: vr(1);
 }
 
 h4,
@@ -49,18 +43,4 @@ h6,
 .subtitle-small {
   @include typi('text-big');
   font-style: italic;
-}
-
-// void margins if headings are inside a header tag
-header > h1,
-header > h2,
-header > h3,
-header > .title-main,
-header > .title,
-header > .title-small,
-header > .subtitle-main,
-header > .subtitle,
-header > .subtitle-small {
-  margin-bottom: 0;
-  margin-top: 0;
 }
