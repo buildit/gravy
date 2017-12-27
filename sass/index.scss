@@ -9,8 +9,6 @@
  */
 @import 'modularscale';
 @import 'typi';
-// @FIXME see https://github.com/zellwk/typi/issues/42
-@import 'typi/public/typefaces/typefaces';
 
 /*
  * Mixins and functions
@@ -30,7 +28,6 @@
 /*
  * Generic: Ground-zero styles (normalize, reset, box-sizing)
  */
-@import 'normalize';
 
 /*
  * Base: Unclassed HTML elements (type selectors)
