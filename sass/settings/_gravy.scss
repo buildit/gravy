@@ -4,14 +4,14 @@ $gravy: (
     font-size: 16px,
     line-height: 1.4
   ),
-  modularscale-ratio: 1.2 // Major Thirds
+  modularscale-ratio: 1.2, // Major Thirds
   breakpoints: (
     small: 600px,
     large: 1200px
   ),
   typefaces: (
     primary: (
-      stack: 'Arial', sans-serif,
+      stack: ('Arial', sans-serif),
       weights: (
         regular: 'regular',
         bold: 'bold'
