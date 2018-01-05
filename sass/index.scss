@@ -13,12 +13,14 @@
 /*
  * Mixins and functions
  */
+@import 'functions/init';
 @import 'functions/breakpoint';
 @import 'mixins/font';
 
 /*
  * Settings: Global variables, config switches
  */
+@import 'settings/gravy';
 @import 'settings/variables';
 @import 'settings/breakpoints';
 @import 'settings/modularscale';
