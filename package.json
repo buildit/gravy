@@ -29,19 +29,22 @@
     "Matteo Pescarin <matteo.pescarin@wipro.com>"
   ],
   "dependencies": {
-    "modularscale-sass": "^3.0.3",
+    "modularscale-sass": "^3.0.4",
     "normalize-scss": "^7.0.0",
-    "typi": "^3.1.1"
+    "typi": "^3.1.2"
   },
   "devDependencies": {
-    "node-sass": "^4.5.3",
+    "mocha": "^4.1.0",
+    "node-sass": "^4.7.2",
+    "sass-true": "^3.0.2",
     "stylelint": "^7.11.0",
     "stylelint-config-sass-guidelines": "^2.2.0",
     "stylelint-order": "^0.5.0",
     "stylelint-scss": "^1.5.2"
   },
   "scripts": {
-    "test": "npm run stylelint && npm run sass",
+    "test": "mocha",
+    "compile": "npm run stylelint && npm run sass",
     "sass": "node-sass sass/gravy.scss dist/css/gravy.css",
     "stylelint": "stylelint sass/**/*.scss"
   }
