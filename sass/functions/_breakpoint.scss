@@ -1,8 +1,35 @@
-/**
- * Returns the breakpoint given the size for it.
- *
- * @param {string} $size - the size of the breakpoint required (e.g. `small` or `large`)
- */
-@function breakpoint($size) {
+/// Returns the breakpoint size given its named size.
+///
+/// @param {string} $name - the named size of the breakpoint requested (e.g. `small` or `large`)
+///
+/// @example
+///   // given the following configuration:
+///   $gravy: (
+///     breakpoints: (
+///       small: 600px,
+///       large: 1200px
+///     ),
+///   // ...
+///   );
+///
+///   // the following use:
+///   .selector {
+///     display: block;
+///
+///     @media all and (min-width: gravy-breakpoint('small')) {
+///       display: none;
+///     }
+///   }
+///
+///   // will produce the following:
+///   .selector {
+///     display: block;
+///
+///     @media all and (min-width: 600px) {
+///       display: none;
+///     }
+///   }
+///
+@function gravy-breakpoint($name) {
   @return map-get($breakpoints, $size);
 }
