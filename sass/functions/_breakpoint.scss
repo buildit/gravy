@@ -1,6 +1,8 @@
 /// Returns the breakpoint size given its named size.
 ///
-/// @param {string} $name - the named size of the breakpoint requested (e.g. `small` or `large`)
+/// @param {string} $name - the named size of the breakpoint requested (e.g. `small` or `large`) as configured in `$gravy`.
+///
+/// @require {map} $gravy
 ///
 /// @example
 ///   // given the following configuration:
