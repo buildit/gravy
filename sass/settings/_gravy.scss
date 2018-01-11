@@ -1,4 +1,4 @@
-// base initialisation map for gravy
+/// base initialisation map for gravy
 $gravy: (
   base: (
     font-size: 16px,
@@ -17,5 +17,12 @@ $gravy: (
         bold: 'bold'
       )
     )
+  ),
+  typi: (
+    base: (
+      null: (ms(0), 1.4),
+      small: (ms(1)),
+      large: (ms(2))
+    )
   )
-);
+) !default;
