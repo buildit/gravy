@@ -1,7 +1,41 @@
+/// Initialises Gravy, mostly creating variables off the configuration map `$gravy`.
+///
 @mixin init() {
   // breakpoints
   @if global-variable-exists('gravy') {
     @debug $gravy;
   }
+
+  // modularscale
+  @if map-has-key($gravy, 'modularscale') {
+    $modularscale: (
+      base: map-get($gravy, 'base-font-size'),
+      ratio: map-get($gravy, 'modularscale')
+    ) !global;
+    @debug $modularscale;
+  }
+
   // typefaces
+  @if map-has-key($gravy, 'typefaces') {
+    $typefaces: map-get($gravy, 'typefaces') !global;
+    @debug $typefaces;
+  }
+
+  // breakpoints
+  @if map-has-key($gravy, 'breakpoints') {
+    $breakpoints: map-get($gravy, 'breakpoints') !global;
+    @debug $breakpoints;
+  }
+
+  // typi
+  // create $typi global map for Typi to work
+  @if map-has-key($gravy, 'typi') {
+    $typi: map-get($gravy, 'typi') !global;
+    @debug $typi;
+
+    @if $typi != null {
+      @debug 'calling typi-init';
+      @include typi-init;
+    }
+  }
 }
