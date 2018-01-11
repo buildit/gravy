@@ -1,10 +1,53 @@
-/**
- * Fills in the right font family and font weight
- *
- * @param {string} $type - either one of `heading`, `primary`, `secondary`  or `monospace`.
- * @param {string} $normal - the font-weight desired, can be `light`, `regular` or `bold`, defaults to `regular`
- */
-@mixin font($type, $weight: 'regular') {
+/// Fills in the right `font-family` and `font-weight`
+///
+/// @param {string} $type - the typeface category configured in `$gravy` config map, e.g. `heading`, `primary`, `secondary`, `monospace`.
+/// @param {string} $weight [regular] - the desired `font-weight`, e.g. `light`, `regular`, `bold`
+///
+/// @require {map} $gravy
+///
+/// @example
+///   // given the following configuration:
+///   $gravy: (
+///     typefaces: (
+///       primary: (
+///         stack: ('Roboto', sans-serif),
+///         weights: (
+///           regular: 'regular'
+///           bold: 'bold'
+///         )
+///       ),
+///       headings: (
+///         stack: ('Helvetica Neue', sans-serif),
+///         weights: (
+///           regular: '400'
+///           bold: '700'
+///         )
+///       )
+///     ),
+///     // ...
+///   );
+///
+///   // the following use
+///   body {
+///     gravy-font('primary');
+///   }
+///
+///   h1 {
+///     gravy-font('headings', 'bold');
+///   }
+///
+///   // will output:
+///   body {
+///     font-family: 'Roboto', sans-serif;
+///     font-weight: regular;
+///   }
+///
+///   h1 {
+///     font-family: 'Helvetica Neue', sans-serif;
+///     font-weight: 700;
+///   }
+///
+@mixin gravy-font($type, $weight: 'regular') {
   @include ff($type);
   @include fw($type, $weight);
 }
