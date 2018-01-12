@@ -1,9 +1,66 @@
+// stylelint-disable
 @import '../node_modules/sass-true/sass/true';
 @import '../sass/gravy';
 
 @include describe('Initialisation') {
-  @include it('Checks the initialisation works as expected') {
-    @include init;
+  @include it('Checks the initialisation creates all the needed global vars') {
+    @include gravy-init;
+    // modularscale config vars
+    @include assert-true(global-variable-exists('ms-base'));
+    @include assert-true(global-variable-exists('ms-ratio'));
+    @include assert-equal($ms-base, map-get($gravy, 'base-font-size'));
+    @include assert-equal($ms-ratio, map-get($gravy, 'modularscale-ratio'));
+    // typefaces map
+    @include assert-true(global-variable-exists('typefaces'));
+    @include assert-true(map-has-key($typefaces, 'primary'));
+    // breakpoints map
+    @include assert-true(global-variable-exists('breakpoints'));
+    @include assert-true(map-has-key($breakpoints, 'small'));
+    @include assert-true(map-has-key($breakpoints, 'large'));
+    // typi map
+    // FIXME this is always the case, better move into a separate test
+    @include assert-true(global-variable-exists('typi'));
+    @include assert-true(map-has-key($typi, 'base'));
+  }
+
+  @include it('Checks modularscale works as expected') {
+    @include assert-equal(ms(0), map-get($gravy, 'base-font-size'));
+    @include assert-equal(ms(1), 19px);
+  }
+
+  @include it('Checks gravy-font outputs the right information') {
+    // FIXME this doesn't seem to work
+    @include assert {
+      @include output {
+        @include gravy-font('primary');
+      }
+      @include expect {
+        font-family: "Arial", sans-serif;
+        font-weight: "regular";
+      }
+    }
+  }
+
+  @include it('Checks gravy-breakpoints returns the right data') {
+    @include assert-equal(gravy-breakpoint('small'), 600px);
+    @include assert-equal(gravy-breakpoint('large'), 1200px);
+  }
+
+  @include it('Checks typi is configured and works properly') {
+    // FIXME this doesn't seem to work
+    @include assert {
+      @include output {
+        h1 {
+          @include typi('base');
+        }
+      }
+      @include expect {
+        h1 {
+          font-size: 1em;
+          line-height: 1.4;
+        }
+      }
+    }
   }
 }
 

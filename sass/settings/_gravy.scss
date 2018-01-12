@@ -1,4 +1,5 @@
-/// base initialisation map for gravy
+/// base initialisation map for gravy, following an explanation of each single root-level key.
+///
 $gravy: (
   base-font-size: 16px,
   base-line-height: 1.4,
@@ -18,9 +19,9 @@ $gravy: (
   ),
   typi: (
     base: (
-      null: (ms(0), 1.4),
-      small: (ms(1)),
-      large: (ms(2))
+      null: (16px, 1.4), // we can't use ms() since it hasn't been initialised yet
+      small: (14px),
+      large: (19px)
     )
   )
 ) !default;

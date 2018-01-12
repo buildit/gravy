@@ -21,31 +21,3 @@
  * Settings: Global variables, config switches
  */
 @import 'settings/gravy';
-@import 'settings/variables';
-// @import 'settings/breakpoints';
-// @import 'settings/modularscale';
-// @import 'settings/typi';
-// @import 'settings/typefaces';
-
-/*
- * Generic: Ground-zero styles (normalize, reset, box-sizing)
- */
-
-/*
- * Base: Unclassed HTML elements (type selectors)
- */
-@import 'base/text';
-@import 'base/headings';
-
-/*
- * Objects: Cosmetic-free design patterns
- */
-
-/*
- * Components: Designed components, chunks of UI
- */
-
-/*
- * Trumps: Helpers and overrides
- */
-@import 'helpers/text';
