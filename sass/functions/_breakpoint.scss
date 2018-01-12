@@ -33,5 +33,5 @@
 ///   }
 ///
 @function gravy-breakpoint($name) {
-  @return map-get($breakpoints, $size);
+  @return map-get($breakpoints, $name);
 }
