@@ -5,11 +5,6 @@
 @include describe('Initialisation') {
   @include it('Checks the initialisation creates all the needed global vars') {
     @include gravy-init;
-    // modularscale config vars
-    @include assert-true(global-variable-exists('ms-base'));
-    @include assert-true(global-variable-exists('ms-ratio'));
-    @include assert-equal($ms-base, map-get($gravy, 'base-font-size'));
-    @include assert-equal($ms-ratio, map-get($gravy, 'modularscale-ratio'));
     // typefaces map
     @include assert-true(global-variable-exists('typefaces'));
     @include assert-true(map-has-key($typefaces, 'primary'));
@@ -21,11 +16,6 @@
     // FIXME this is always the case, better move into a separate test
     @include assert-true(global-variable-exists('typi'));
     @include assert-true(map-has-key($typi, 'base'));
-  }
-
-  @include it('Checks modularscale works as expected') {
-    @include assert-equal(ms(0), map-get($gravy, 'base-font-size'));
-    @include assert-equal(ms(1), 19px);
   }
 
   @include it('Checks gravy-font outputs the right information') {
