@@ -27,6 +27,9 @@
   },
   "homepage": "https://github.com/buildit/gravy",
   "contributors": [],
+  "engines": {
+    "node": ">=8.9.3"
+  },
   "dependencies": {
     "typi": "^3.1.2"
   },
