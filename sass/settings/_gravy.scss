@@ -1,9 +1,91 @@
 /// base initialisation map for gravy, following an explanation of each single root-level key.
 ///
+/// This is basically an aggregation of configuration maps used by several different libraries.
+/// It will create the actual maps that will be then used at runtime through some mixins.
+/// Some of this configuration is mandatory, the rest can be omitted as some sensible defaults are provided.
+///
+/// ## Typefaces
+///
+/// Allows you to use the mixin [`gravy-font()`](#mixin-gravy-font).
+///
+/// ```scss
+/// typefaces: (
+///   name: (
+///     stack: ('fontface1', 'fontface2'),
+///     weights: (
+///       light: 300,
+///       regular: 400,
+///       medium: 500,
+///       bold: 600
+///     )
+///   )
+/// )
+/// ```
+///
+/// Allows you to do the following:
+///
+/// ```scss
+///   @include gravy-font('name', 'medium');
+/// ```
+///
+/// ## Breakpoints
+///
+/// Allows to store and access easily breakpoint sizes in whichever format you want using [`gravy-breakpoint()`](#function-gravy-breakpoint).
+/// Few grid frameworks use this map already.
+///
+/// ```scss
+/// breakpoints: (
+///   namedsize: 1024px
+/// )
+/// ```
+///
+/// You can then access them with the following:
+///
+/// ```scss
+///   @include gravy-breakpoint('namedsize');
+/// ```
+///
+/// ## Typi
+///
+/// Please refer to [Typi](https://github.com/zellwk/typi) for information on how to correctly configure this variable.
+/// You will need to use the name of the breakpoints defined in the `breakpoints` map when definining every single responsive font sizing definition.
+/// In its essence this map is organised as follows:
+///
+/// ```scss
+/// breakpoints: (
+///   breakpoint1: 600px,
+///   breakpoint2: 1200px
+/// )
+/// typi: (
+///   base: (
+///     null: (font-size, line-height),
+///     breakpoint1: (font-size-1, line-height-1),
+///     breakpoint2: (font-size-2, line-height-2)
+///   )
+///   name1: (
+///     null: (font-size-3, line-height-3),
+///     breakpoint1: (font-size-4, line-height-4),
+///     breakpoint2: (font-size-5, line-height-5)
+///   ),
+///   name2: (
+///     null: (font-size-4, line-height-4),
+///     breakpoint1: (font-size-5, line-height-5),
+///     breakpoint2: (font-size-6, line-height-6)
+///   )
+/// )
+/// ```
+///
+/// This way you can call typi in the following way:
+///
+/// ```scss
+///   @include typi('name2');
+/// ```
+///
+/// which will generate all the necessary font-sizes and breakpoints
+///
 $gravy: (
   base-font-size: 16px,
   base-line-height: 1.4,
-  modularscale-ratio: 1.2, // Major Thirds
   breakpoints: (
     small: 600px,
     large: 1200px
@@ -19,7 +101,7 @@ $gravy: (
   ),
   typi: (
     base: (
-      null: (16px, 1.4), // we can't use ms() since it hasn't been initialised yet
+      null: (16px, 1.4),
       small: (14px),
       large: (19px)
     )

@@ -1,18 +1,11 @@
 /// Initialises Gravy, mostly creating variables off the configuration map `$gravy`.
-///
 @mixin gravy-init() {
-  // modularscale
-  @if map-has-key($gravy, 'modularscale-ratio') and map-has-key($gravy, 'base-font-size') {
-    $ms-base: map-get($gravy, 'base-font-size') !global;
-    $ms-ratio: map-get($gravy, 'modularscale-ratio') !global;
-  }
-
-  // // typefaces
+  // typefaces
   @if map-has-key($gravy, 'typefaces') {
     $typefaces: map-get($gravy, 'typefaces') !global;
   }
 
-  // // breakpoints
+  // breakpoints
   @if map-has-key($gravy, 'breakpoints') {
     $breakpoints: map-get($gravy, 'breakpoints') !global;
   }
