@@ -2,9 +2,11 @@
 @import '../node_modules/sass-true/sass/true';
 @import '../sass/gravy';
 
+@include gravy-init;
+
 @include describe('Initialisation') {
+
   @include it('Checks the initialisation creates all the needed global vars') {
-    @include gravy-init;
     // typefaces map
     @include assert-true(global-variable-exists('typefaces'));
     @include assert-true(map-has-key($typefaces, 'primary'));
@@ -19,7 +21,6 @@
   }
 
   @include it('Checks gravy-font outputs the right information') {
-    // FIXME this doesn't seem to work
     @include assert {
       @include output {
         @include gravy-font('primary');
@@ -37,7 +38,6 @@
   }
 
   @include it('Checks typi is configured and works properly') {
-    // FIXME this doesn't seem to work
     @include assert {
       @include output {
         h1 {
@@ -46,8 +46,20 @@
       }
       @include expect {
         h1 {
-          font-size: 1em;
+          font-size: 100%;
           line-height: 1.4;
+        }
+
+        @media all and (min-width: gravy-breakpoint('small')) {
+          h1 {
+            font-size: 87.5%;
+          }
+        }
+
+        @media all and (min-width: gravy-breakpoint('large')) {
+          h1 {
+            font-size: 118.75%;
+          }
         }
       }
     }
