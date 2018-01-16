@@ -7,7 +7,7 @@ $gravy: (
     headings: (
       stack: ('Helvetica Neue', sans-serif),
       weights: (
-        normal: 300,
+        regular: 300,
         bold: 500
       )
     )
@@ -19,10 +19,12 @@ $gravy: (
 @include describe('Initialisation') {
 
   @include it('Checks the initialisation creates all the needed global vars') {
+    @include assert-true(map-has-key($gravy, 'base-font-size'));
+    @include assert-true(map-has-key($gravy, 'base-line-height'));
     // typefaces map
     @include assert-true(global-variable-exists('typefaces'));
     @include assert-false(map-has-key($typefaces, 'primary'));
-    @include assert-true(map-has-key($typefaces, 'helvetica'));
+    @include assert-true(map-has-key($typefaces, 'headings'));
     // all the default var are as expected
     // breakpoints map
     @include assert-true(global-variable-exists('breakpoints'));
