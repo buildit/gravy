@@ -1,0 +1,50 @@
+// stylelint-disable
+@import '../node_modules/sass-true/sass/true';
+@import '../sass/gravy';
+
+$gravy: (
+  typefaces: (
+    headings: (
+      stack: ('Helvetica Neue', sans-serif),
+      weights: (
+        normal: 300,
+        bold: 500
+      )
+    )
+  )
+);
+
+@include gravy-init;
+
+@include describe('Initialisation') {
+
+  @include it('Checks the initialisation creates all the needed global vars') {
+    // typefaces map
+    @include assert-true(global-variable-exists('typefaces'));
+    @include assert-false(map-has-key($typefaces, 'primary'));
+    @include assert-true(map-has-key($typefaces, 'helvetica'));
+    // all the default var are as expected
+    // breakpoints map
+    @include assert-true(global-variable-exists('breakpoints'));
+    @include assert-true(map-has-key($breakpoints, 'small'));
+    @include assert-true(map-has-key($breakpoints, 'large'));
+    // typi map
+    // FIXME this is always the case, better move into a separate test
+    @include assert-true(global-variable-exists('typi'));
+    @include assert-true(map-has-key($typi, 'base'));
+  }
+
+  @include it('Checks gravy-font outputs the right information') {
+    @include assert {
+      @include output {
+        @include gravy-font('headings');
+      }
+      @include expect {
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@include report;
