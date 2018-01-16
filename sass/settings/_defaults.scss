@@ -1,0 +1,26 @@
+/// default settings for the configuration of gravy.
+/// The first level keys will be merged in the final configuration file if they're not defined.
+$gravy-defaults: (
+  base-font-size: 16px,
+  base-line-height: 1.4,
+  breakpoints: (
+    small: 600px,
+    large: 1200px
+  ),
+  typefaces: (
+    primary: (
+      stack: ('Arial', sans-serif),
+      weights: (
+        regular: 'regular',
+        bold: 'bold'
+      )
+    )
+  ),
+  typi: (
+    base: (
+      null: (16px, 1.4),
+      small: (14px),
+      large: (19px)
+    )
+  )
+);

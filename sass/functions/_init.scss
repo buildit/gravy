@@ -1,20 +1,36 @@
-/// Initialises Gravy, mostly creating variables off the configuration map `$gravy`.
 @mixin gravy-init() {
+  // base keys
+  @if not map-has-key($gravy, 'base-font-size') {
+    $gravy: map-merge($gravy, ('base-font-size', map-get($gravy-defaults, 'base-font-size')));
+  }
+  @if not map-has-key($gravy, 'base-line-height') {
+    $gravy: map-merge($gravy, ('base-line-height', map-get($gravy-defaults, 'base-line-height')));
+  }
+
   // typefaces
   @if map-has-key($gravy, 'typefaces') {
     $typefaces: map-get($gravy, 'typefaces') !global;
+  }
+  @else {
+    // initialise with $gravy-defaults variables
+    $typefaces: map-get($gravy-defaults, 'typeface') !global;
   }
 
   // breakpoints
   @if map-has-key($gravy, 'breakpoints') {
     $breakpoints: map-get($gravy, 'breakpoints') !global;
   }
+  @else {
+    $breakpoints: map-get($gravy-defaults, 'breakpoints') !global;
+  }
 
   // typi
-  // create $typi global map for Typi to work
   @if map-has-key($gravy, 'typi') {
     $typi: map-get($gravy, 'typi') !global;
-
-    @include typi-init; // stylelint-disable order/order
   }
+  @else {
+    $typi: map-get($gravy-defaults, 'typi') !global;
+  }
+
+  @include typi-init;
 }

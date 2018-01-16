@@ -83,27 +83,4 @@
 ///
 /// which will generate all the necessary font-sizes and breakpoints
 ///
-$gravy: (
-  base-font-size: 16px,
-  base-line-height: 1.4,
-  breakpoints: (
-    small: 600px,
-    large: 1200px
-  ),
-  typefaces: (
-    primary: (
-      stack: ('Arial', sans-serif),
-      weights: (
-        regular: 'regular',
-        bold: 'bold'
-      )
-    )
-  ),
-  typi: (
-    base: (
-      null: (16px, 1.4),
-      small: (14px),
-      large: (19px)
-    )
-  )
-) !default;
+$gravy: $gravy-defaults !default;
