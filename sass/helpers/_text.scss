@@ -1,9 +1,0 @@
-// give the ability to use the font family alone
-.is-heading {
-  @include font('heading', 'regular');
-}
-
-// give the ability to use the secondary font family alone
-.is-secondary {
-  @include font('secondary', 'regular');
-}
