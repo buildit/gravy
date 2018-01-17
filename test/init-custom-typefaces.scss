@@ -16,21 +16,31 @@ $gravy: (
 
 @include gravy-init;
 
-@include describe('Initialisation') {
+@include describe('Initialisation with typefaces only config') {
 
-  @include it('Checks the initialisation creates all the needed global vars') {
+  @include it('Checks global variables have been created') {
+    @include assert-true(global-variable-exists('base-font-size'), 'base-font-size');
+    @include assert-true(global-variable-exists('base-line-height'), 'base-line-height');
+  }
+
+  @include it('Checks the base keys are present') {
     @include assert-true(map-has-key($gravy, 'base-font-size'));
     @include assert-true(map-has-key($gravy, 'base-line-height'));
-    // typefaces map
-    @include assert-true(global-variable-exists('typefaces'));
-    @include assert-false(map-has-key($typefaces, 'primary'));
-    @include assert-true(map-has-key($typefaces, 'headings'));
-    // all the default var are as expected
-    // breakpoints map
+  }
+
+  @include it('Checks typefaces global map has been created') {
+    @include assert-true(global-variable-exists('typefaces'), 'global variable $typefaces');
+    @include assert-false(map-has-key($typefaces, 'primary'), '$typefaces does NOT contain the key "primary"');
+    @include assert-true(map-has-key($typefaces, 'headings'), '$typefaces contains the key "headings"');
+  }
+
+  @include it('Checks breakpoints global map has been created') {
     @include assert-true(global-variable-exists('breakpoints'));
     @include assert-true(map-has-key($breakpoints, 'small'));
     @include assert-true(map-has-key($breakpoints, 'large'));
-    // typi map
+  }
+
+  @include it('Checks typi global map has been created') {
     // FIXME this is always the case, better move into a separate test
     @include assert-true(global-variable-exists('typi'));
     @include assert-true(map-has-key($typi, 'base'));

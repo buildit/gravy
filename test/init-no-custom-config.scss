@@ -4,7 +4,7 @@
 
 @include gravy-init;
 
-@include describe('Initialisation') {
+@include describe('Initialisation with no custom config') {
 
   @include it('Checks global variables have been created') {
     @include assert-true(global-variable-exists('base-font-size'), 'base-font-size');
