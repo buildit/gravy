@@ -6,15 +6,23 @@
 
 @include describe('Initialisation') {
 
-  @include it('Checks the initialisation creates all the needed global vars') {
-    // typefaces map
+  @include it('Checks global variables have been created') {
+    @include assert-true(global-variable-exists('base-font-size'), 'base-font-size');
+    @include assert-true(global-variable-exists('base-line-height'), 'base-line-height');
+  }
+
+  @include it('Checks typefaces global map has been created') {
     @include assert-true(global-variable-exists('typefaces'));
     @include assert-true(map-has-key($typefaces, 'primary'));
-    // breakpoints map
+  }
+
+  @include it('Checks breakpoints global map has been created') {
     @include assert-true(global-variable-exists('breakpoints'));
     @include assert-true(map-has-key($breakpoints, 'small'));
     @include assert-true(map-has-key($breakpoints, 'large'));
-    // typi map
+  }
+
+  @include it('Checks typi global map has been created') {
     // FIXME this is always the case, better move into a separate test
     @include assert-true(global-variable-exists('typi'));
     @include assert-true(map-has-key($typi, 'base'));

@@ -7,6 +7,14 @@
     $gravy: map-merge($gravy, ('base-line-height': map-get($gravy-defaults, 'base-line-height')));
   }
 
+  // create some global variables for ease-of-use
+  @if not global-variable-exists('base-font-size') {
+    $base-font-size: map-get($gravy, 'base-font-size') !global;
+  }
+  @if not global-variable-exists('base-line-height') {
+    $base-line-height: map-get($gravy, 'base-line-height') !global;
+  }
+
   // typefaces
   @if map-has-key($gravy, 'typefaces') {
     $typefaces: map-get($gravy, 'typefaces') !global;
