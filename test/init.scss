@@ -11,6 +11,11 @@
     @include assert-true(global-variable-exists('base-line-height'), 'base-line-height');
   }
 
+  @include it('Checks the base keys are present') {
+    @include assert-true(map-has-key($gravy, 'base-font-size'));
+    @include assert-true(map-has-key($gravy, 'base-line-height'));
+  }
+
   @include it('Checks typefaces global map has been created') {
     @include assert-true(global-variable-exists('typefaces'));
     @include assert-true(map-has-key($typefaces, 'primary'));
