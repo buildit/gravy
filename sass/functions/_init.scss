@@ -21,7 +21,7 @@
   }
   @else {
     // initialise with $gravy-defaults variables
-    $typefaces: map-get($gravy-defaults, 'typeface') !global;
+    $typefaces: map-get($gravy-defaults, 'typefaces') !global;
   }
 
   // breakpoints
