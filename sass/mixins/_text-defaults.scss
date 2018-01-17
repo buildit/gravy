@@ -2,7 +2,13 @@
 ///
 @mixin gravy-text-defaults() {
   body {
-    @include gravy-font('primary');
+    @if map-has-key($typi, 'primary') {
+      @include gravy-font('primary');
+    }
+    @else {
+      @warn 'primary key in typi map is not set.';
+      @warn 'you have to set body font-face and weight yourself!';
+    }
     margin: 0;
   }
 
