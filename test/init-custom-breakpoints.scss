@@ -1,0 +1,51 @@
+// stylelint-disable
+@import '../node_modules/sass-true/sass/true';
+@import '../sass/gravy';
+
+$gravy: (
+  breakpoints: (
+    measure1: 40em,
+    measure2: 10000px
+  )
+);
+
+@include gravy-init;
+
+@include describe('Initialisation with breakpoints only config') {
+
+  @include it('Checks global variables have been created') {
+    @include assert-true(global-variable-exists('base-font-size'), 'base-font-size');
+    @include assert-true(global-variable-exists('base-line-height'), 'base-line-height');
+  }
+
+  @include it('Checks the base keys are present') {
+    @include assert-true(map-has-key($gravy, 'base-font-size'));
+    @include assert-true(map-has-key($gravy, 'base-line-height'));
+  }
+
+  @include it('Checks typefaces global map has been created') {
+    @include assert-true(global-variable-exists('typefaces'), 'global variable $typefaces');
+    @include assert-true(map-has-key($typefaces, 'primary'), '$typefaces contains the key "primary"');
+  }
+
+  @include it('Checks breakpoints global map has been created') {
+    @include assert-true(global-variable-exists('breakpoints'));
+    @include assert-false(map-has-key($breakpoints, 'small'));
+    @include assert-false(map-has-key($breakpoints, 'large'));
+    @include assert-true(map-has-key($breakpoints, 'measure1'));
+    @include assert-true(map-has-key($breakpoints, 'measure2'));
+  }
+
+  @include it('Checks typi global map has been created') {
+    // FIXME this is always the case, better move into a separate test
+    @include assert-true(global-variable-exists('typi'));
+    @include assert-true(map-has-key($typi, 'base'));
+  }
+
+  @include it('Checks gravy-breakpoints returns the right data') {
+    @include assert-equal(gravy-breakpoint('measure1'), 40em);
+    @include assert-equal(gravy-breakpoint('measure2'), 10000px);
+  }
+}
+
+@include report;
