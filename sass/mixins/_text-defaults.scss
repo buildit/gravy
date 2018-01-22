@@ -2,7 +2,7 @@
 ///
 @mixin gravy-text-defaults() {
   body {
-    @if map-has-key($typi, 'primary') {
+    @if map-has-key($typefaces, 'primary') {
       @include gravy-font('primary');
     }
     @else {
