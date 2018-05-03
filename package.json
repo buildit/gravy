@@ -34,14 +34,14 @@
     "typi": "^3.1.2"
   },
   "devDependencies": {
-    "mocha": "^4.1.0",
-    "node-sass": "^4.7.2",
-    "sass-true": "^3.0.2",
+    "mocha": "^5.1.1",
+    "node-sass": "^4.9.0",
+    "sass-true": "^4.0.0",
     "sassdoc": "^2.5.0",
-    "stylelint": "^8.4.0",
-    "stylelint-config-sass-guidelines": "^4.1.0",
-    "stylelint-order": "^0.8.0",
-    "stylelint-scss": "^2.2.0"
+    "stylelint": "^9.2.0",
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^3.1.0"
   },
   "scripts": {
     "test": "mocha",
