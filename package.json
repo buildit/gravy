@@ -31,17 +31,17 @@
     "node": ">=8.9.3"
   },
   "dependencies": {
-    "typi": "^3.1.2"
+    "typi": "^3.2.0"
   },
   "devDependencies": {
-    "mocha": "^5.1.1",
-    "node-sass": "^4.9.0",
+    "mocha": "^5.2.0",
+    "node-sass": "^4.9.4",
     "sass-true": "^4.0.0",
     "sassdoc": "^2.5.0",
-    "stylelint": "^9.2.0",
-    "stylelint-config-sass-guidelines": "^5.0.0",
-    "stylelint-order": "^0.8.1",
-    "stylelint-scss": "^3.1.0"
+    "stylelint": "^9.6.0",
+    "stylelint-config-sass-guidelines": "^5.2.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.1"
   },
   "scripts": {
     "test": "mocha",
