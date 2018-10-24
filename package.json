@@ -37,7 +37,7 @@
     "mocha": "^5.2.0",
     "node-sass": "^4.9.4",
     "sass-true": "^4.0.0",
-    "sassdoc": "^2.5.0",
+    "sassdoc": "^2.5.1",
     "stylelint": "^9.6.0",
     "stylelint-config-sass-guidelines": "^5.2.0",
     "stylelint-order": "^1.0.0",
