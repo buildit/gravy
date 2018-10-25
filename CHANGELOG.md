@@ -8,10 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Support for [`sass-module-importer`](https://github.com/lucasmotta/sass-module-importer) (thanks @ringods!)
+
 ### Fixed
 
 - Upgraded old and insecure dependencies (issue #16)
-
 
 
 ## [2.0.1] - 2018-01-22

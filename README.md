@@ -38,7 +38,7 @@ Install the library via npm, the usual way:
 
     $ npm install @buildit/gravy
 
-If you have [Eyeglass](http://eyeglass.rocks) installed, you can simply include the symbol Gravy exports to your main scss file:
+If you have [Eyeglass](http://eyeglass.rocks) or [`sass-module-importer`](https://github.com/lucasmotta/sass-module-importer) installed, you can simply include the symbol Gravy exports to your main scss file:
 
 ```scss
 @include "gravy";
