@@ -2,8 +2,7 @@
   "name": "@buildit/gravy",
   "version": "2.0.2",
   "description": "SASS foundation library.",
-  "main": "README.md",
-  "style": "sass/index.scss",
+  "main": "sass/index.scss",
   "repository": {
     "type": "git",
     "url": "git@github.com:buildit/gravy.git"
@@ -27,7 +26,10 @@
     "url": "https://github.com/buildit/gravy/issues"
   },
   "homepage": "https://github.com/buildit/gravy",
-  "contributors": [],
+  "contributors": [
+    "Ringo De Smet (https://ringo.de-smet.name/)",
+    "James Nash (http://cirrus.twiddles.com/)"
+  ],
   "engines": {
     "node": ">=8.9.3"
   },
