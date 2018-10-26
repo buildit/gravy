@@ -18,6 +18,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Upgraded old and insecure dependencies (issue #16)
 
+## [2.0.2] - 2018-05-03
+
+### Fixed
+
+- Updated dependencies
 
 ## [2.0.1] - 2018-01-22
 
