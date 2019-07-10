@@ -1,4 +1,9 @@
-[![CircleCI](https://circleci.com/gh/buildit/gravy/tree/master.svg?style=svg)](https://circleci.com/gh/buildit/gravy/tree/master)
+⚠️ **Gravy has moved!**
+Gravy is no longer maintained by [Buildit](https://buildit.wiprodigital.com/). Future development will happen on [ThePeach's fork](https://github.com/ThePeach/gravy).
+
+If you were previously using the `@buildit/gravy` NPM package, please migrate your dependncy to [`gravy-sass`](https://www.npmjs.com/package/gravy-sass) instead.
+
+-----
 
 # Gravy is a SCSS foundation library
 
